@@ -4,7 +4,7 @@
 
 
 html {
-  background: url(chrome://global/skin/icons/firefox-icon-red.png) 100% 0 no-repeat, linear-gradient(to bottom, rgba(187,202,215,1), rgba(187,202,215,0) 666px) #f8f8f8!important;
+  background: url(chrome://branding/content/about-logo@2x.png) top -159px right -174px  no-repeat, linear-gradient(to bottom, rgba(187,202,215,1), rgba(187,202,215,0) 666px) #f8f8f8!important;
   color: #525c66;
   min-height: 100%;
   background-attachment:fixed;
