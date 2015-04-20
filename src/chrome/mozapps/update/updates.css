@@ -1,0 +1,161 @@
+/* General */
+/* Specify the size for the wizardpage so the billboard has a fixed size. 3rd
+   party themes should typically specify the same values. */
+wizardpage {
+  height: 360px;
+  width: 700px;
+}
+
+/* Remove margin and padding so the billboard will extend to the edge of the
+   window. 3rd party themes should typically specify the same values. */
+#updates, .wizard-page-box {
+  margin: 0;
+  padding: 0;
+}
+
+.update-header {
+  padding: 0px 10px;
+}
+
+.update-content {
+  padding: 10px;
+}
+
+.loadingBox {
+  padding: 3px 5px 3px 5px;
+}
+
+.remoteLoadingThrobber {
+  margin-top: 3px;
+}
+
+.remoteLoadingThrobber[state="loading"] {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+}
+
+.remoteLoadingThrobber[state="error"] {
+  list-style-image: url("chrome://global/skin/icons/information-16.png");
+}
+
+.wizard-buttons-separator {
+  margin-top: 0 !important;
+}
+
+#licenseContent, #incompatibleListbox {
+  -moz-margin-start: 6px;
+  -moz-margin-end: 6px;
+}
+
+/* Update Found Basic Page */
+#updateName, #updateFinishedName {
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* License Page */
+#licenseContent {
+  -moz-appearance: listbox;
+}
+
+/* Incompatible List Page */
+#incompatibleListbox {
+  margin-bottom: 6px;
+}
+
+/* Downloading Page */
+#downloadStatusLine {
+  -moz-box-align: center;
+}
+
+#downloadStatus {
+  height: 3em !important;
+}
+
+#downloadStatusProgress {
+  padding-right: 5px;
+}
+
+#pauseButton {
+  padding: 0 2px;
+  margin: 0 3px;
+  min-height: 0;
+  min-width: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: transparent;
+  list-style-image: url(chrome://mozapps/skin/downloads/service_stop.png);
+}
+
+/* !Important must be used otherwise this won't immediately take affect */
+#pauseButton > .button-box {
+  padding: 0 !important;
+}
+
+#pauseButton:hover {
+  background: transparent;
+  border-color: rgba(83,101,128,.29) rgba(83,100,128,.29) rgba(138,150,168,.435);
+  box-shadow: 0 1px 0 0 rgba(255,255,255,.1686) inset,
+              0 -1px 0 0 rgba(255,255,255,.07) inset,
+              1px 0 0 0 rgba(255,255,255,.07) inset,
+              -1px 0 0 0 rgba(255,255,255,.07) inset;
+}
+
+#pauseButton:active {
+  background: linear-gradient(#ECF0F8, #F0F4FC, #E8ECF5);
+  border-color: #8D9CB1;
+  box-shadow: 0 1px 2px 0 #D2D5DC inset;
+}
+
+#pauseButton[disabled="true"] {
+  opacity: .6;
+}
+
+#verificationFailedIcon {
+  margin-left: 5px;
+  list-style-image: url("chrome://global/skin/icons/notfound.png");
+}
+
+/* Error Page */
+#errorReason {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  -moz-margin-start: 6px !important;
+  -moz-margin-end: 5px;
+  font-weight: bold;
+}
+
+/* Update History Window */
+update {
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+.update-name {
+  font-weight: bold;
+}
+
+.update-label-column {
+  -moz-box-align: end;
+}
+
+.update-type {
+  font-weight: bold;
+  color: #990000;
+}
+
+#historyItems {
+  -moz-appearance: listbox;
+  height: 200px;
+  margin: 1px 5px 4px 5px;
+}
+
+#historyItems > scrollbox {
+  margin-bottom: 1px;
+}
+
+#downloadStatusProgress > button {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}

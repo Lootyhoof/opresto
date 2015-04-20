@@ -1,0 +1,81 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+html {
+  background: url(chrome://global/skin/icons/firefox-icon-red.png) 100% 0 no-repeat, linear-gradient(to bottom, rgba(187,202,215,1), rgba(187,202,215,0) 666px) #f8f8f8!important;
+  color: #525c66;
+  min-height: 100%;
+  background-attachment:fixed;
+}
+
+body {
+  max-width: 650px;
+  margin: 25px auto 10px auto;
+  padding: 40px;
+  border-width: 20px;
+  background: transparent;
+  border-width: 20px;
+  border-style: solid;
+  border-image: url("chrome://global/skin/icons/container.png") 20 fill repeat stretch !important;
+  color: #000000;
+  font: message-box;
+}
+
+h1 {
+  margin: 0 0 .6em 0;
+  border-bottom: 1px solid ThreeDLightShadow;
+  font-size: 160%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+#errorPageContainer {
+  position: relative;
+  min-width: 13em;
+  max-width: 52em;
+  margin: 4em auto;
+  border: 1px solid #FFBD09; /* pale yellow extracted from yellow passport icon */
+  border-radius: 10px;
+  padding: 3em;
+  -moz-padding-start: 30px;
+  background: url("chrome://global/skin/icons/sslWarning.png") left 0 no-repeat -moz-Field;
+  background-origin: content-box;
+}
+
+#errorPageContainer:-moz-dir(rtl) {
+  background-position: right 0;
+}
+
+#errorTitle {
+  -moz-margin-start: 80px;
+}
+
+#errorLongContent {
+  -moz-margin-start: 80px;
+}
+
+.expander > button {
+  -moz-padding-start: 20px;
+  -moz-margin-start: -20px;
+  background: url("chrome://browser/skin/aboutCertError_sectionExpanded.png") left center no-repeat;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.expander > button:-moz-dir(rtl) {
+  background-position: right center;
+}
+
+.expander[collapsed] > button {
+  background-image: url("chrome://browser/skin/aboutCertError_sectionCollapsed.png");
+}
+
+.expander[collapsed] > button:-moz-dir(rtl) {
+  background-image: url("chrome://browser/skin/aboutCertError_sectionCollapsed-rtl.png");
+}

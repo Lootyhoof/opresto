@@ -1,0 +1,191 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+findbar {
+  min-width: 1px;
+  transition-property: margin-bottom, opacity, visibility;
+  transition-duration: 150ms, 150ms, 0s;
+  transition-timing-function: ease-in-out, ease-in-out, linear;
+}
+
+findbar[hidden] {
+  /* Override display:none to make the transition work. */
+  display: -moz-box;
+  visibility: collapse;
+  margin-bottom: -1em;
+  opacity: 0;
+  transition-delay: 0s, 0s, 150ms;
+}
+
+.findbar-closebutton {
+  padding: 3px 5px;
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-appearance: none;
+  -moz-image-region: rect(0, 16px, 16px, 0);
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  border-image: none !important;
+}
+
+.findbar-closebutton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.findbar-closebutton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+findbar:not(:-moz-lwtheme) {
+  min-width: 1px;
+  height: 30px;
+  background-color: #DCE1EF;
+  box-shadow: 0 1px 0 0 #9397A2 inset, 0 2px 0 0 #EEF1F9 inset;
+}
+
+.findbar-find-next.tabbable > .toolbarbutton-text ,
+.findbar-find-previous.tabbable > .toolbarbutton-text {
+  display: none !important;
+}
+
+/* find-next button */
+
+.findbar-find-next {
+  list-style-image: url("chrome://global/skin/icons/find.png");
+  -moz-image-region: rect(0px 16px 16px 0px);
+}
+
+.findbar-find-next[disabled="true"] {
+  -moz-image-region: rect(16px 16px 32px 0px) !important;
+}
+
+/* find-previous button */
+
+.findbar-find-previous {
+  list-style-image: url("chrome://global/skin/icons/find.png");
+  -moz-image-region: rect(0px 32px 16px 16px);
+}
+
+.findbar-find-previous[disabled="true"] {
+  -moz-image-region: rect(16px 32px 32px 16px) !important;
+}
+
+/* highlight button */
+
+.findbar-highlight {
+  list-style-image: url("chrome://global/skin/icons/find.png");
+  -moz-image-region: rect(0px 48px 16px 32px);
+}
+
+.findbar-highlight[disabled="true"] {
+  -moz-image-region: rect(16px 48px 32px 32px) !important;
+}
+
+.findbar-highlight:active, .findbar-highlight[checked="true"] {
+  -moz-image-region: rect(0px 48px 16px 32px);
+}
+
+.find-status-icon {
+  list-style-image: none;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  -moz-margin-start: 12px;
+  -moz-margin-end: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+.findbar-find-status {
+  margin: 0 !important;
+  -moz-margin-start: 3px !important;
+  padding: 2px !important;
+}
+
+.find-status-icon[status="notfound"] {
+  list-style-image: url("chrome://global/skin/icons/information-16.png");
+}
+
+.findbar-textbox {
+  border: 1px solid #A5A6AA !important;
+  border-radius: 0px !important;
+  background: url("chrome://global/skin/icons/Search-glass.png") -moz-Field no-repeat 3px center;
+  -moz-padding-start: 24px !important;
+}
+
+.findbar-textbox[status="notfound"] {
+  background-color: #FFB4B4 !important;
+  box-shadow: 0 0 0 1px #FFFFFF inset !important;
+}
+
+.findbar-textbox[flash="true"] {
+  background-color: yellow !important;
+  box-shadow: 0 0 0 1px #FFFFFF inset !important;
+}
+
+.find-status-icon[status="wrapped"] {
+  list-style-image: url("chrome://global/skin/icons/wrap.png");
+}
+
+#stylish #findbar {
+  background: none !important;
+}
+
+.findbar-find-next.tabbable,
+.findbar-find-previous.tabbable {
+  padding: 3px 2px 4px 7px !important;
+  -moz-margin-start: 0px !important;
+  -moz-margin-end: 3px !important;
+}
+
+.findbar-highlight.tabbable {
+  padding: 2px 2px 4px 7px !important;
+  -moz-padding-start: 5px !important;
+  -moz-padding-end: 9px !important;
+}
+
+.findbar-find-next.tabbable,
+.findbar-find-previous.tabbable,
+.findbar-highlight.tabbable {
+  -moz-appearance: none!important;
+  background: linear-gradient(#F7F8FE, #EFF2FA, #E6EAF6)!important;
+  background-clip: padding-box!important;
+  border-radius: 3.8px!important;
+  border: 1px solid!important;
+  border-color: #B8BDCC!important;
+  box-shadow: 0 1px 0 0 #FDFDFF inset,
+              0 -1px 0 0 #F3F5FA inset,
+              1px 0 0 0 #F7F8FC inset,
+              -1px 0 0 0 #F7F8FC inset!important;
+  color: #000000!important;
+  transition: border-color .15s, background-color .15s;
+}
+
+.findbar-find-next.tabbable:not([disabled]):hover,
+.findbar-find-previous.tabbable:not([disabled]):hover,
+.findbar-highlight.tabbable:not([disabled]):not([checked="true"]):hover {
+  background: linear-gradient(#E2F2FD, #C2E5FC, #B5DFFB)!important;
+  border-color: #2374B2!important;
+  box-shadow: 0 1px 0 0 #F6FBFF inset,
+              0 -1px 0 0 #CEEAFC inset,
+              1px 0 0 0 #DDF0FD inset,
+              -1px 0 0 0 #DDF0FD inset!important;
+}
+
+.findbar-find-next.tabbable:active:not([disabled="true"]),
+.findbar-find-previous.tabbable:active:not([disabled="true"]),
+.findbar-highlight.tabbable:active:not([disabled="true"]),
+.findbar-highlight.tabbable[checked="true"] {
+  background: linear-gradient(#B5DBF5, #B8DEF7, #BBE1FA)!important;
+  border-color: #2374B2!important;
+  box-shadow: 0 1px 0 0 #AACEE6 inset,
+              0 -1px 0 0 #B0D4EC inset,
+              1px 0 0 0 #ADD1E8 inset,
+              -1px 0 0 0 #ADD1E8 inset!important;
+}
+
+.find-status-icon[status="pending"] {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+}
+
+#stylish #findbar {
+  background: none !important;
+}

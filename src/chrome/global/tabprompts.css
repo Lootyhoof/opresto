@@ -1,0 +1,21 @@
+/* Tab Modal Prompt boxes */
+tabmodalprompt {
+  background-color: hsla(0,0%,10%,.5);
+  font-family: sans-serif; /* use content font not system UI font */
+}
+
+.mainContainer {
+  color: black;
+  border-width: 12px;
+  border-style: solid;
+  border-image: url("chrome://global/skin/icons/popupmenu_extension.png") 12 fill repeat stretch;
+  background-color: transparent;
+}
+
+.topContainer {
+  padding: 20px;
+}
+
+.buttonContainer {
+  padding: 12px 20px 15px;
+}

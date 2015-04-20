@@ -1,0 +1,4 @@
+skin browser      opresto chrome/browser/
+skin communicator opresto chrome/communicator/ 
+skin mozapps      opresto chrome/mozapps/ 
+skin global       opresto chrome/global/ 

@@ -1,0 +1,143 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.notification-inner {
+  border: 0 !important;
+}
+
+notification {
+  background: #DCE1EF;
+  color: #666666;
+  box-shadow: 0 1px 0px #EEF1F9 inset, 0 -1px 0px #9CA1AC inset, 0 -2px 0px #E3E7F2 inset;
+}
+
+notification[type="info"] { 
+  background: linear-gradient(#F7EFD1, #F5EAC5, #F3E6B8);
+  box-shadow: 0 1px 0px #F9F2DB inset, 0 -1px 0px #B3A46B inset, 0 -2px 0px #F5EAC5 inset;
+}
+
+notification[type="critical"] {
+  background: linear-gradient(#F7D3D0, #F5C7C4, #F3BBB7);
+  box-shadow: 0 1px 0px #F9DCDB inset, 0 -1px 0px #9CA1AC inset, 0 -2px 0px #F5C7C4 inset;
+}
+
+#sync-notifications > notification {
+  background: linear-gradient(#F7EFD1, #F5EAC5, #F3E6B8);
+  box-shadow: 0 1px 0px #F9F2DB inset, 0 -1px 0px #F5EAC5 inset;
+}
+
+.messageImage {
+  width: 16px;
+  height: 16px;
+  -moz-margin-start: 6px;
+  -moz-margin-end: 1px;
+}
+
+/* Default icons for notifications */
+
+notification[type="info"] .messageImage,
+.messageImage[type="info"] {
+  list-style-image: url("chrome://global/skin/icons/information-16.png");
+}
+
+notification[type="warning"] .messageImage,
+.messageImage[type="warning"] {
+  list-style-image: url("chrome://global/skin/icons/warning-16.png");
+}
+
+notification[type="critical"] .messageImage,
+.messageImage[type="critical"] {
+  list-style-image: url("chrome://global/skin/icons/error-16.png");
+}
+
+.messageCloseButton {
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-appearance: none;
+  -moz-image-region: rect(0, 16px, 16px, 0);
+  -moz-margin-start: 10px;
+  -moz-margin-end: 10px;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  border-image: none !important;
+}
+
+.messageCloseButton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.messageCloseButton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+/* Popup notification */
+
+.popup-notification-description {
+  max-width: 24em;
+}
+
+.popup-notification-button-container {
+  margin-top: 17px;
+}
+
+/*
+XXX: apply styles to all themes until bug 509642 is fixed
+@media (-moz-windows-default-theme) {
+*/
+
+.popup-notification-menubutton[type="menu-button"] {
+  margin: 0;
+  padding: 0;
+}
+
+.popup-notification-menubutton > .button-menubutton-button {
+  -moz-appearance: none;
+  padding: 1px 5px 1px 5px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.popup-notification-menubutton > .button-menubutton-dropmarker {
+  -moz-appearance: none;
+  padding: 1px 5px 2px 5px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.popup-notification-menubutton {
+  border: 1px solid;
+  border-color: #B8BDCC;
+}
+
+.popup-notification-menubutton:hover {
+  border-color: #2374B2;
+}
+
+.popup-notification-menubutton:hover:active,
+.popup-notification-menubutton[open="true"],
+.popup-notification-menubutton[checked="true"] {
+  border-color: #2374B2;
+}
+
+.popup-notification-menubutton > .button-menubutton-dropmarker {
+  list-style-image: url("chrome://global/skin/icons/dropdown.png") !important;
+  -moz-image-region: rect(0, 7px, 9px, 0) !important;
+}
+
+.popup-notification-menubutton:-moz-focusring > .button-menubutton-dropmarker {
+  outline: 1px dotted ThreeDDarkShadow;
+  outline-offset: -3px;
+}
+
+.popup-notification-closebutton {
+  -moz-margin-end: -12px;
+  margin-top: -6px;
+}
+
+.popup-notification-closeitem {
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
