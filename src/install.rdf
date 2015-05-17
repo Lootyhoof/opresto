@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{626cf6f3-deae-4cf8-b98e-98e62085837f}</em:id>
-    <em:version>1.0.0</em:version>
+    <em:version>1.0.1</em:version>
     <em:name>Opresto</em:name>
     <em:description>Opera Presto theme for Pale Moon. Fork of "FXOpera" (Presto version) by dkgo</em:description>
     <em:creator>Lootyhoof</em:creator>
