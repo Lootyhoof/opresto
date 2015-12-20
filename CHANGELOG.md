@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.2.0
+- (PM26) add history menu button
+- show more icons in history/bookmarks menus
+- fix media controls
+
 ### 1.1.2
 - (Win10) shade window background on Pale Moon 26 builds later than b2
 
