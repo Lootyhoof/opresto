@@ -2,5 +2,3 @@ skin browser      opresto chrome/browser/
 skin communicator opresto chrome/communicator/ 
 skin mozapps      opresto chrome/mozapps/ 
 skin global       opresto chrome/global/ 
-skin appver       opresto chrome/appver/25/ appversion<=26.0.0b2
-skin appver       opresto chrome/appver/26/ appversion>26.0.0b2
