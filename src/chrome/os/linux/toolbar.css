@@ -1,14 +1,49 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
-/* ===== toolbar.css ====================================================
-  == Styles used by XUL toolbar-related elements.
-  ======================================================================= */
-
-@import url("chrome://os/skin/toolbar.css");
-
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: toolbox ::::: */
+
+toolbox {
+  -moz-appearance: toolbox;
+}
+
+/* ::::: menubar & toolbar ::::: */
+
+toolbar {
+  -moz-appearance: toolbar;
+  min-width: 1px;
+  min-height: 20px;
+  padding: 2px 0px;
+}
+
+menubar, toolbar[type="menubar"] {
+  -moz-appearance: menubar;
+  min-width: 1px;
+  min-height: 20px;
+  padding: 1px 0px;
+}
+
+menubar:-moz-lwtheme,
+toolbar:-moz-lwtheme {
+  -moz-appearance: none;
+}
+
+/* in browser.xul, the menubar is inside a toolbar... */
+toolbaritem > menubar {
+  -moz-appearance: none;
+}
+
+/* ::::: toolbar decorations ::::: */
+
+toolbarseparator {
+  -moz-appearance: separator !important;
+  margin : 0;
+  border: 0;
+  min-width: 2px;
+}
+
+toolbarspacer {
+  width: 15px;
+}
 
 /* ::::: toolbarpaletteitem ::::: */
 
@@ -20,6 +55,13 @@ toolbarpaletteitem {
 .toolbarpaletteitem-box[type="spring"] {
   border: 1px solid #808080;
   background-color: #FFF !important;
+}
+
+toolbarpaletteitem[place="toolbar"] {
+  margin-left: -2px;
+  margin-right: -2px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
 }
 
 toolbarpaletteitem[place="toolbar"] > toolbarspacer {
@@ -51,13 +93,6 @@ toolbarpaletteitem[place="toolbar"] > toolbarspacer {
 }
 
 /* ..... drag and drop feedback ..... */
-
-toolbarpaletteitem[place="toolbar"] {
-  margin-left: -2px;
-  margin-right: -2px;
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-}
 
 toolbarpaletteitem[dragover="left"] {
   border-left-color: #000000;

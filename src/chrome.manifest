@@ -2,3 +2,5 @@ skin browser      opresto chrome/browser/
 skin communicator opresto chrome/communicator/ 
 skin mozapps      opresto chrome/mozapps/ 
 skin global       opresto chrome/global/ 
+skin os           opresto chrome/os/winnt/ os=WINNT
+skin os           opresto chrome/os/linux/ os=Linux
