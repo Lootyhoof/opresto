@@ -4104,6 +4104,24 @@ chatbox {
 	  text-shadow: 0 0 .5em white, 0 0 .5em white, 0 1px 0 rgba(255,255,255,.4);
 	}
   }
+  
+  @media (-moz-os-version: windows-win8),
+         (-moz-os-version: windows-win10) {
+    /* On dark window frames, use a light text color instead of fog on Win8/10 */
+    #main-window[darkwindowframe=true] #toolbar-menubar:not(:-moz-lwtheme),
+    #main-window[darkwindowframe=true] #TabsToolbar:not(:-moz-lwtheme) {
+      color: white;
+    }
+    
+    /* Prevent the dark window frame styles from disturbing native menu styling */
+    #main-window[darkwindowframe=true] #main-menubar > menu:not(:-moz-lwtheme) {
+      color: inherit;
+    }
+    
+    #main-window[darkwindowframe=true] #toolbar-menubar:not(:-moz-lwtheme):-moz-window-inactive {
+      color: ThreeDShadow;
+    }
+  }
 
   #main-window[sizemode=fullscreen]:not(:-moz-lwtheme) {
     -moz-appearance: none;
