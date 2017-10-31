@@ -2020,7 +2020,7 @@ toolbar[brighttext] .tabbrowser-arrowscrollbox > .scrollbutton-down {
   -moz-image-region: rect(0px, 36px, 18px, 18px);
 }
 
-toolbar[brighttext] #new-tab-button,
+#TabsToolbar[brighttext] #new-tab-button,
 toolbar[brighttext] .tabs-newtab-button {
   list-style-image: url(chrome://browser/skin/tabbrowser/add-inverted.png);
 }
