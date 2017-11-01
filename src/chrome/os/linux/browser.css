@@ -1,1 +1,8 @@
-/* Nothing to see here */
+#toolbar-menubar:not(:-moz-lwtheme) {
+  -moz-appearance: menubar !important;
+}
+
+#TabsToolbar:not(:-moz-lwtheme) {
+  -moz-appearance: menubar !important;
+  color: -moz-menubartext;
+}
