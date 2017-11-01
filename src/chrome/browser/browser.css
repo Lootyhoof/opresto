@@ -10,12 +10,13 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 :root {
-  --appmenu-background: rgba(254,254,254,.3);
-  --appmenu-border-color: rgba(0,0,0,.2);
+  --appmenu-background: var(--appmenu-icon), linear-gradient(to bottom, rgba(245,245,246,0.85), rgba(232,233,234,0.63));
+  --appmenu-border-color: rgba(11,25,38,0.55);
   --appmenu-border-radius: 5.3px;
-  --appmenu-box-shadow: 0 1px 0 rgba(254,254,254,.4) inset;
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 0 0 1px rgba(255,255,255,.25) inset;
+  --appmenu-icon: url("chrome://branding/content/icon32.png") -11px -15px no-repeat;
   --appmenu-margin: 0 0 2px 0;
-  --appmenu-padding: 0 1.5em .05em 1.5em;
+  --appmenu-padding: 0 1em .05em 2em;
 
   --nav-bar-bg-stop1: #EBEEF8;
   --nav-bar-bg-stop2: #E3E7F3;
@@ -159,13 +160,22 @@
 #appmenu-button {
   -moz-appearance: none;
   border-top: none !important;
-  border: 1px solid var(--appmenu-border-color);
+  border-width: 2px;
+  -moz-border-left-colors: hsla(0,0%,100%,.5) var(--appmenu-border-color);
+  -moz-border-bottom-colors: hsla(0,0%,100%,.5) var(--appmenu-border-color);
+  -moz-border-right-colors: hsla(0,0%,100%,.5) var(--appmenu-border-color);
   background: var(--appmenu-background);
   box-shadow: var(--appmenu-box-shadow);
   color: #0C0C0C;
   padding: var(--appmenu-padding);
   margin: var(--appmenu-margin);
   border-radius: 0 0 var(--appmenu-border-radius) var(--appmenu-border-radius);
+}
+
+@media (-moz-windows-glass) {
+  #appmenu-button {
+    --appmenu-padding: 0 1em .2em 2em;
+  }
 }
 
 @media not all and (-moz-windows-compositor) {
@@ -175,7 +185,6 @@
 
   #main-window[sizemode=normal] #appmenu-button {
     --appmenu-margin: 0 0 8px 0;
-    --appmenu-padding: 0 1.5em 0 1.5em;
   }
 
   #main-window[tabsintitlebar] #appmenu-button {
@@ -187,20 +196,32 @@
   }
 }
 
-#appmenu-button:-moz-lwtheme {
-  color: inherit;
-  text-shadow: inherit;
-}  
-
 #appmenu-button:hover:not(:active):not([open]) {
-  --appmenu-background: rgba(255,255,255,.5);
-  --appmenu-box-shadow: 0 1px 0 rgba(254,254,254,.58) inset;
+  --appmenu-background: var(--appmenu-icon), linear-gradient(rgba(254,254,254,0.99),rgba(243,243,244,0.76));
+  --appmenu-border-color: rgba(11,25,38,0.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset;
 }
 
 #appmenu-button:hover:active,
 #appmenu-button[open] {
-  --appmenu-background: rgba(243,243,243,.5);
-  --appmenu-box-shadow: 0 1px 0 rgba(227,227,227,.52) inset;
+  --appmenu-background: var(--appmenu-icon), linear-gradient(rgba(254,254,254,0.99),rgba(243,243,244,0.76));
+  --appmenu-border-color: rgba(11,25,38,0.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 0 3px 1px rgba(0,0,0,.25) inset;
+}
+
+#main-window[sizemode="normal"] > #titlebar > #titlebar-content > #appmenu-button-container {
+  margin-top: 1px;
+}
+
+#appmenu-popup {
+  margin-top: -1px;
+  -moz-margin-start: 1px;
+}
+
+#appmenu-button > * > * > .button-text  {
+  margin-top: 1px !important;
+  margin-bottom: -1px !important;
+  text-shadow: 1px 1px #fff;
 }
 
 #appmenu-button > .button-box {
