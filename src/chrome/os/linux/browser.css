@@ -6,3 +6,37 @@
   -moz-appearance: menubar !important;
   color: -moz-menubartext;
 }
+
+/* ::::: app menu button ::::: */
+
+#appmenu-toolbar-button {
+  --appmenu-margin: 3px 0px 3px 2px;
+  -moz-appearance: none;
+  background: var(--appmenu-background) !important;
+  box-shadow: var(--appmenu-box-shadow) !important;
+  color: #0C0C0C;
+  padding: var(--appmenu-padding) !important;
+  margin: var(--appmenu-margin) !important;
+  border: 1px solid var(--appmenu-border-color) !important;
+  border-radius: var(--appmenu-border-radius) !important;
+}
+
+#main-window[sizemode=maximized] #appmenu-toolbar-button {
+  --appmenu-margin: 3px 0px 3px 0px;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-left: none !important;
+}
+
+#appmenu-toolbar-button:hover:not(:active):not([open]) {
+  --appmenu-background: var(--appmenu-icon), linear-gradient(rgba(254,254,254,0.99),rgba(243,243,244,0.76));
+  --appmenu-border-color: rgba(11,25,38,0.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset;
+}
+
+#appmenu-toolbar-button:hover:active,
+#appmenu-toolbar-button[open] {
+  --appmenu-background: var(--appmenu-icon), linear-gradient(rgba(254,254,254,0.99),rgba(243,243,244,0.76));
+  --appmenu-border-color: rgba(11,25,38,0.9);
+  --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 0 3px 1px rgba(0,0,0,.25) inset;
+}
