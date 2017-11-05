@@ -40,3 +40,12 @@
   --appmenu-border-color: rgba(11,25,38,0.9);
   --appmenu-box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 0 3px 1px rgba(0,0,0,.25) inset;
 }
+
+/* Private browsing indicator */
+
+#main-window[privatebrowsingmode=temporary] #toolbar-menubar[autohide="false"] ~ #TabsToolbar::before {
+  display: -moz-box;
+  content: "";
+  background: url("chrome://browser/skin/Privacy-16.png") center no-repeat;
+  width: 32px;
+}
