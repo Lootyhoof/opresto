@@ -1,9 +1,6 @@
 @media (-moz-windows-compositor) {
   #main-window[tabsintitlebar] #appmenu-button {
-    --appmenu-margin: -4px 0 4px 0;
-  }
-  #main-window[tabsintitlebar]:not([inFullscreen]) #titlebar {
-    margin-top: 1px !important;
+    --appmenu-margin: -1px 0 0 0;
   }
   #main-window[tabsintitlebar]:not([inFullscreen]) #titlebar-buttonbox {
     margin-top: -3px !important;
@@ -663,10 +660,6 @@
   #appmenu-button {
     margin-top: -1px;
     margin-bottom: 5px !important;
-  }
-  
-  #main-window[tabsintitlebar] #TabsToolbar {
-    margin-top: -1px !important;
   }
 }
 
