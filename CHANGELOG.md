@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.0.1
+- improve findbar persona styling
+- Windows: fix titlebar margin when tabs in titlebar
+- Windows: use inverted icons in tab bar always when on Vista/Win7
+
 ### 2.0.0
 - make appmenu more Opera-like
 - improve cross-platform styling
