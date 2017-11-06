@@ -146,6 +146,7 @@ findbar:not(:-moz-lwtheme) {
               1px 0 0 0 #F7F8FC inset,
               -1px 0 0 0 #F7F8FC inset!important;
   color: #000000!important;
+  text-shadow: none !important;
   transition: border-color .15s, background-color .15s;
 }
 
