@@ -1,5 +1,23 @@
 # Changelog
 
+### 2.0.0
+- make appmenu more Opera-like
+- improve cross-platform styling
+- fix statusbar progressmeter
+- add dark new tab/all tabs/tab scroll icons
+- improve detection of when to use dark/light icons
+- add dark persona styling
+- add basic OS X support
+- preserve add-on bar close button in text mode
+- draw a background on Win10 for better accent color detection
+- improve persona styling
+- improve appmenu edit icons
+- sync devtools styling with default
+- Linux: add appmenu styling
+- Linux: improve menubar/tab bar styling
+- Linux: add private browsing indicator
+- major cleanup
+
 ### 1.6.0
 - sync about:support styling with default
 - sync about:permissions styling with default
