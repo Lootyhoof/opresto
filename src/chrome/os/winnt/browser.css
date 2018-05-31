@@ -765,9 +765,13 @@
     color: var(--window-text-color);
     border-left-style: none !important;
     border-right-style: none !important;
-  padding-top: 0 !important;
+    padding-top: 0 !important;
     box-shadow: none !important;
 }
+
+  #main-menubar > menu:not(:-moz-lwtheme) {
+    color: inherit;
+  }
 
   /* Show toolbar borders on vista through win8, but not on win10 and later: */
   @media (-moz-os-version: windows-vista),          
