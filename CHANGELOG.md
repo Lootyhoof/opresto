@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.1.0
+- add initial Pale Moon 28 support
+- don't use background image on standalone image viewer
+- fix toolbar text color on Win8/10 in tab bar/"glass" toolbars
+
 ### 2.0.1
 - improve findbar persona styling
 - Windows: fix titlebar margin when tabs in titlebar
