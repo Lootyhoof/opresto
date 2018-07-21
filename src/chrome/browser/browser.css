@@ -1288,6 +1288,12 @@ color: inherit !important;
   color: #444444;
 }
 
+.browserContainer > findbar {
+  background-color: transparent;
+  color: #111111;
+  text-shadow: none;
+}
+
 /* ::::: throbber ::::: */
 
 #navigator-throbber {
