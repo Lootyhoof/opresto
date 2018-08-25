@@ -20,7 +20,7 @@ textbox {
   cursor: text;
   margin: 3px 4px;
   padding: 2px 2px 3px;
-  -moz-padding-start: 4px;
+  padding-inline-start: 4px;
   background-color: -moz-Field;
   color: -moz-FieldText;
   border: 1px solid;
@@ -74,7 +74,7 @@ textbox[type="search"]:not([searchbutton]) {
   background-image: url("chrome://global/skin/icons/Search-glass.png");
   background-repeat: no-repeat;
   background-position: 3px center;
-  -moz-padding-start: 24px;
+  padding-inline-start: 24px;
 }
 
 .textbox-search-icon[searchbutton] {

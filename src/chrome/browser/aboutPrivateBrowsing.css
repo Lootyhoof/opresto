@@ -9,19 +9,19 @@ body {
 }
 
 #errorTitle {
-  -moz-margin-start: 250px;
+  margin-inline-start: 250px;
   font-size: 120%;
   text-shadow: 0 1px 0 #fff;
   color: #cc0f16;
 }
 
 #errorLongContent {
-  -moz-margin-start: 250px;
+  margin-inline-start: 250px;
 }
 
 body.private > #errorPageContainer {
   background-image: url("chrome://browser/skin/Privacy-48.png");
-  -moz-margin-start: -50px;
+  margin-inline-start: -50px;
 }
 
 body.normal > #errorPageContainer {
@@ -37,7 +37,7 @@ body.normal > #errorPageContainer {
 }
 
 #startPrivateBrowsingDesc > button {
-  -moz-margin-start: 0;
+  margin-inline-start: 0;
 }
 
 #footerDesc > p {
@@ -46,7 +46,7 @@ body.normal > #errorPageContainer {
 
 #moreInfo {
   font-size: 110%; /* to match the value set in chrome://global/skin/netError.css */
-  -moz-padding-start: 25px;
+  padding-inline-start: 25px;
   background: url("chrome://global/skin/icons/information-16.png") no-repeat top left;
 }
 

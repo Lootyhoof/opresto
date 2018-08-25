@@ -81,7 +81,7 @@
 
 #appmenu-popup {
   margin-top: -1px;
-  -moz-margin-start: 1px;
+  margin-inline-start: 1px;
 }
 
 @media (-moz-windows-default-theme) {
@@ -93,13 +93,13 @@
   #appmenuPrimaryPane {
     background-color: rgba(255,255,255,0.5);
     padding: 2px;
-    -moz-border-end: none;
+    border-inline-end: none;
   }
   #appmenuSecondaryPane {
     background-color: #f1f5fb;
     box-shadow: 1px 0 2px rgb(204,214,234) inset;
-    -moz-padding-start: 3px;
-    -moz-padding-end: 2px;
+    padding-inline-start: 3px;
+    padding-inline-end: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
@@ -147,7 +147,7 @@
     -moz-appearance: none;
     margin-top: 3px;
     margin-bottom: 3px;
-    -moz-margin-start: 30px;
+    margin-inline-start: 30px;
     padding: 0;
     border-top: 1px solid #d6e5f5;
     border-bottom: none;
@@ -241,7 +241,7 @@
 
 @media not all and (-moz-windows-classic) {
   #titlebar-min {
-    -moz-margin-end: 2px;
+    margin-inline-end: 2px;
   }
 }
 
@@ -857,7 +857,7 @@
     content: "";
     display: block;
     margin-top: -15px;
-    -moz-margin-start: -2px;
+    margin-inline-start: -2px;
     padding: 0;
     width: 32px;
     height: 7px;
@@ -922,7 +922,7 @@
 
     window[sizemode="maximized"] #titlebar-buttonbox {
       -moz-appearance: none !important;
-      -moz-margin-end: -3px !important;
+      margin-inline-end: -3px !important;
       padding-bottom: 3px;
     }
   }

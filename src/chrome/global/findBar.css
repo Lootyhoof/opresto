@@ -78,15 +78,15 @@ findbar:not(:-moz-lwtheme) {
   list-style-image: none;
   margin-top: 2px;
   margin-bottom: 0px;
-  -moz-margin-start: 12px;
-  -moz-margin-end: 0px;
+  margin-inline-start: 12px;
+  margin-inline-end: 0px;
   width: 16px;
   height: 16px;
 }
 
 .findbar-find-status {
   margin: 0 !important;
-  -moz-margin-start: 3px !important;
+  margin-inline-start: 3px !important;
   padding: 2px !important;
 }
 
@@ -98,7 +98,7 @@ findbar:not(:-moz-lwtheme) {
   border: 1px solid #A5A6AA !important;
   border-radius: 0px !important;
   background: url("chrome://global/skin/icons/Search-glass.png") -moz-Field no-repeat 3px center;
-  -moz-padding-start: 24px !important;
+  padding-inline-start: 24px !important;
 }
 
 .findbar-textbox[status="notfound"] {
@@ -122,14 +122,14 @@ findbar:not(:-moz-lwtheme) {
 .findbar-find-next.tabbable,
 .findbar-find-previous.tabbable {
   padding: 3px 2px 4px 7px !important;
-  -moz-margin-start: 0px !important;
-  -moz-margin-end: 3px !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 3px !important;
 }
 
 .findbar-highlight.tabbable {
   padding: 2px 2px 4px 7px !important;
-  -moz-padding-start: 5px !important;
-  -moz-padding-end: 9px !important;
+  padding-inline-start: 5px !important;
+  padding-inline-end: 9px !important;
 }
 
 .findbar-find-next.tabbable,

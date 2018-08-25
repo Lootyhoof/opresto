@@ -33,8 +33,8 @@ notification[type="critical"] {
 .messageImage {
   width: 16px;
   height: 16px;
-  -moz-margin-start: 6px;
-  -moz-margin-end: 1px;
+  margin-inline-start: 6px;
+  margin-inline-end: 1px;
 }
 
 /* Default icons for notifications */
@@ -56,8 +56,8 @@ notification[type="critical"] .messageImage,
 
 .messageCloseButton {
   -moz-appearance: none;
-  -moz-margin-start: 10px;
-  -moz-margin-end: 10px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
   border: none !important;
   box-shadow: none !important;
   background: none !important;
@@ -136,7 +136,7 @@ XXX: apply styles to all themes until bug 509642 is fixed
 }
 
 .popup-notification-closebutton {
-  -moz-margin-end: -12px;
+  margin-inline-end: -12px;
   margin-top: -6px;
 }
 

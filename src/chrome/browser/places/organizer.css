@@ -9,7 +9,7 @@
 /* Toolbar */
 #placesToolbar {
   padding: 3px;
-  -moz-padding-end: 6px;
+  padding-inline-end: 6px;
 }
 
 #placesToolbar > toolbarbutton[disabled] > .toolbarbutton-icon {
@@ -36,14 +36,14 @@
 
 /* Menu */
 #placesMenu {
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
   -moz-appearance: none;
   border: none;
 }
 
 #placesMenu > menu {
-  -moz-padding-start: 4px;
-  -moz-padding-end: 1px;
+  padding-inline-start: 4px;
+  padding-inline-end: 1px;
   padding-top: 2px;
   padding-bottom: 2px;
   -moz-appearance: toolbarbutton;
@@ -61,14 +61,14 @@
 
 #placesMenu > menu[open="true"] {
   border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
-  -moz-padding-start: 5px;
-  -moz-padding-end: 0px;
+  padding-inline-start: 5px;
+  padding-inline-end: 0px;
   padding-top: 3px;
   padding-bottom: 1px;
 }
 
 #placesMenu > menu > .menubar-text {
-  -moz-padding-end: 12px;
+  padding-inline-end: 12px;
   background: url(chrome://global/skin/icons/dropdown.png) right center no-repeat;
 }
 
@@ -107,8 +107,8 @@
 }
 
 #clearDownloadsButton {
-  -moz-padding-start: 9px;
-  -moz-padding-end: 9px;
+  padding-inline-start: 9px;
+  padding-inline-end: 9px;
 }
 
 /* Root View */
@@ -123,7 +123,7 @@
 }
 
 #infoBoxExpanderLabel {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
 }
 
 #searchFilter {
@@ -153,11 +153,11 @@
 
 #placesView > splitter {
   border: 0;
-  -moz-border-end: 1px solid #AFB0B4;
+  border-inline-end: 1px solid #AFB0B4;
   min-width: 0;
   width: 3px;
   background-color: transparent;
-  -moz-margin-start: -3px;
+  margin-inline-start: -3px;
   position: relative;
 }
 
