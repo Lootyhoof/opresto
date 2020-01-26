@@ -1,5 +1,5 @@
 # Opresto
-![Preview](http://i67.tinypic.com/xo4cqv.png)
+![Preview](https://i.imgur.com/u2HyLdo.png)
 
 Fork of the theme "FXOpera" (Presto version) by dkgo for Pale Moon.
 
