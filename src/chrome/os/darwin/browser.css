@@ -66,6 +66,11 @@
   -moz-appearance: none !important;
 }
 
+/* Blend the tab bar with the titlebar */
+#TabsToolbar:not(:-moz-lwtheme) {
+  -moz-appearance: toolbar !important;
+}
+
 /* Private browsing indicator */
 
 #main-window[privatebrowsingmode=temporary] #TabsToolbar::before {
