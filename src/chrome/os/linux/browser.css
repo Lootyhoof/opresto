@@ -7,6 +7,13 @@
   color: -moz-menubartext;
 }
 
+#nav-bar:not(:-moz-lwtheme),
+#nav-bar:not(:-moz-lwtheme) textbox,
+#PersonalToolbar:not(:-moz-lwtheme) textbox,
+#TabsToolbar[tabsontop=false]:not(:-moz-lwtheme) textbox {
+  color: #000;
+}
+
 /* ::::: app menu button ::::: */
 
 #appmenu-toolbar-button {
