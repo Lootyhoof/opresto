@@ -923,6 +923,23 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   box-shadow: 0 -1px 0 0 #A0B8D6 inset;
 }
 
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent {
+  background-image: linear-gradient(#dde599, #e4e590, #e0e283);
+  box-shadow: 0 1px 0 0 #e2edb4 inset;
+  color: #00173F;
+}
+
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent:hover {
+  background-image: linear-gradient(#e9efb8, #e9edb1, #e6eaa8);
+  box-shadow: 0 1px 0 0 #ebf2cb inset;
+}
+
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent[open="true"],
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent:hover:active {
+  background-image: linear-gradient(#bfcc76, #c2ce7d, #c1ce88);
+  box-shadow: 0 -1px 0 0 #ced6a0 inset;
+}
+
 #identity-box:-moz-focusring {
   outline: 1px dotted #000;
   outline-offset: -3px;
